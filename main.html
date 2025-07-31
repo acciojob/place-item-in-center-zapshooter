@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css"/>
-    <title>Place Item in Center</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centering Items with Flexbox</title>
+  <style>
+    body {
+      margin: 0; /* Remove default body margin for full viewport coverage */
+      font-family: 'Arial', sans-serif;
+      background: #f0f0f0; /* Light background for contrast */
+    }
+
+    .holder {
+      width: 100vw; /* Full viewport width */
+      height: 100vh; /* Full viewport height */
+      display: flex; /* Enable Flexbox */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      background: #e0e0e0; /* Optional: Subtle background for the holder */
+    }
+
+    .item-1 {
+      width: 100px; /* Required width */
+      height: 100px; /* Required height */
+      background-color: red; /* Required background color */
+      border-radius: 8px; /* Optional: Rounded corners for appeal */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow for depth */
+    }
+  </style>
 </head>
 <body>
-    <div class="holder">
-        <div class="item item-1">
-            Place me in center using flex
-        </div>
-    </div>
+  <div class="holder">
+    <div class="item-1"></div>
+  </div>
 </body>
 </html>
